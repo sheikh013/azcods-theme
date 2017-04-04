@@ -1,0 +1,66 @@
+%input {
+    color: #555;
+    border: 1px solid #888;
+    border-radius: 3px;
+    padding: 7px 5px;
+    font-weight: normal;
+}
+
+%placeholder-text {
+    &::-moz-placeholder {
+        color: #999;
+        opacity: 0.8;
+    }
+    &:-ms-input-placeholder {
+        color: #999;
+    }
+    &::-webkit-input-placeholder {
+        color: #999;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    @extend %input;
+    @extend %placeholder-text;
+    &:focus {
+        color: #111;
+        border: solid 1px #555;
+    }
+}
+
+select {
+    @extend %input;
+    @extend %placeholder-text;
+}
+
+textarea {
+    width: 100%;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: solid 1px #333;
+    border-radius: 3px;
+    line-height: 1;
+    padding: 11px 2px;
+    background-color: #ddd;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}

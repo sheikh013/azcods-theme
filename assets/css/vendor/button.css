@@ -1,0 +1,516 @@
+
+
+
+/* Common button styles */
+.sk_btn_juno .button {
+
+        text-align: center;
+	min-width: 150px;
+	max-width: 250px;
+	display: inline-block;
+	margin-top: 1em;
+        margin-bottom: 1em;
+	padding: 1em 2em;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.sk_btn_juno .button:focus {
+	outline: none;
+}
+.sk_btn_juno .button > span {
+	vertical-align: middle;
+}
+
+
+
+/* Sizes */
+.sk_btn_juno  .button--size-s {
+	font-size: 14px;
+}
+.sk_btn_juno  .button--size-m {
+	font-size: 16px;
+}
+.sk_btn_juno  .button--size-l {
+	font-size: 18px;
+}
+
+/* Typography and Roundedness */
+.sk_btn_juno .button--text-upper {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.sk_btn_juno .button--text-capital {
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+
+
+.sk_btn_juno .button--text-thin {
+	font-weight: 300;
+}
+.sk_btn_juno .button--text-medium {
+	font-weight: 500;
+}
+.sk_btn_juno .button--text-thick {
+	font-weight: 600;
+}
+.sk_btn_juno .button--round-s {
+	border-radius: 5px;
+}
+.sk_btn_juno .button--round-m {
+	border-radius: 15px;
+}
+.sk_btn_juno .button--round-l {
+	border-radius: 40px;
+}
+
+/* Borders */
+.sk_btn_juno .button--border-thin {
+	border: 1px solid;
+}
+.sk_btn_juno .button--border-medium {
+	border: 2px solid;
+}
+.sk_btn_juno .button--border-thick {
+	border: 3px solid;
+}
+
+
+
+
+/* Individual button styles */
+
+/* Winona */
+.sk_btn_juno .button--winona {
+	overflow: hidden;
+	color: #2d98e0;
+	-webkit-transition: border-color 0.3s, background-color 0.3s;
+	transition: border-color 0.3s, background-color 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.sk_btn_juno .button--winona::after {
+	content: attr(data-text);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	color: #fff;
+	-webkit-transform: translate3d(0, 25%, 0);
+	transform: translate3d(0, 25%, 0);
+}
+.sk_btn_juno .button--winona > span {
+	display: block;
+}
+
+.sk_btn_juno .button--winona::after,
+.sk_btn_juno .button--winona > span {
+	padding: 1em 2em;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.sk_btn_juno .button--winona:hover {
+	border-color: #2d98e0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sk_btn_juno .button--winona:hover::after {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.sk_btn_juno .button--winona:hover > span {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -25%, 0);
+	transform: translate3d(0, -25%, 0);
+}
+
+/* Ujarak */
+.sk_btn_juno .button--ujarak {
+	-webkit-transition: border-color 0.4s, color 0.4s;
+	transition: border-color 0.4s, color 0.4s;
+        color: #2d98e0;
+}
+.sk_btn_juno .button--ujarak::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2d98e0;/* BG Color*/
+	z-index: -1;
+	opacity: 0;
+         border-radius: inherit;
+	-webkit-transform: scale3d(0.7, 1, 1);
+	transform: scale3d(0.7, 1, 1);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+       
+}
+
+.sk_btn_juno .button--ujarak,
+.sk_btn_juno .button--ujarak::before {
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.sk_btn_juno .button--ujarak:hover {
+	color: #fff;
+	border-color: #2d98e0; /* Border Color*/
+        
+}
+
+.sk_btn_juno .button--ujarak:hover::before {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* Wayra */
+.sk_btn_juno .button--wayra {
+	overflow: hidden;
+	width: 245px;
+	-webkit-transition: border-color 0.3s, color 0.3s;
+	transition: border-color 0.3s, color 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        color: #2d98e0;/* Text Color*/
+}
+.sk_btn_juno .button--wayra::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150%;
+	height: 100%;
+	background: #2d98e0;
+	z-index: -1;
+	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	-webkit-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+	transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+.sk_btn_juno .button--wayra:hover {
+	color: #fff;
+	border-color: #2d98e0;
+}
+
+.sk_btn_juno .button--wayra:hover::before {
+	opacity: 1;
+	background-color: #2d98e0;
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg);
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+
+/* Tamaya */
+.sk_btn_juno .button--tamaya {
+	overflow: hidden;
+	color: #222;
+	min-width: 180px;
+}
+
+.sk_btn_juno .button--tamaya::before,
+.sk_btn_juno .button--tamaya::after {
+	content: attr(data-text);
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	background: #2d98e0;
+	color: #fff;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.sk_btn_juno .button--tamaya::before {
+	top: 0;
+	padding-top: 1em;
+}
+.sk_btn_juno .button--tamaya::after {
+	bottom: 0;
+	line-height: 0;
+}
+.sk_btn_juno .button--tamaya > span {
+	display: block;
+	-webkit-transform: scale3d(0.2, 0.2, 1);
+	transform: scale3d(0.2, 0.2, 1);
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.sk_btn_juno .button--tamaya:hover::before {
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+.sk_btn_juno .button--tamaya:hover::after {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+.sk_btn_juno .button--tamaya:hover > span {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+/* Rayen */
+.sk_btn_juno .button--rayen {
+	overflow: hidden;
+	color: #2d98e0;
+	min-width: 130px;
+}
+
+.sk_btn_juno .button--rayen:hover{
+    color: #2d98e0;
+}
+.sk_btn_juno .button--rayen::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #0c639e;
+        color: #fff;
+        border-color: #111;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+
+.sk_btn_juno .button--rayen::before,
+.sk_btn_juno .button--rayen > span {
+	padding: 1em 2em;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.sk_btn_juno .button--rayen:hover::before {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.sk_btn_juno .button--rayen:hover > span {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+
+
+/* Isi */
+.sk_btn_juno .button--isi {
+	padding: 1.2em 2em;
+	color: #fff;
+	background: #2d98e0;
+	overflow: hidden;
+}
+
+.sk_btn_juno .button--isi:hover{
+    color: #fff;
+}
+.sk_btn_juno .button--isi::before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin: -15px 0 0 1px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #0c639e;
+        color: #fff;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	-webkit-transform: scale3d(1, 2, 1);
+	transform: scale3d(1, 2, 1);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+}
+.sk_btn_juno .button--isi .button__icon {
+	vertical-align: middle;
+}
+.sk_btn_juno .button--isi > span {
+	vertical-align: middle;
+	padding-left: 0.75em;
+}
+.sk_btn_juno .button--isi:hover::before {
+	-webkit-transform: scale3d(9, 9, 1);
+	transform: scale3d(9, 9, 1);
+}
+
+/* Aylen */
+.sk_btn_juno .button.button--aylen {
+	background: #fff;
+	color: #2d98e0;
+	overflow: hidden;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.sk_btn_juno .button--aylen::before,
+.sk_btn_juno .button--aylen::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 100%;
+	left: 0;
+	z-index: -1;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.sk_btn_juno .button--aylen::before {
+	background: #86c8f5;
+}
+.sk_btn_juno .button--aylen::after {
+	background: #2d98e0;
+}
+.sk_btn_juno .button--aylen:hover {
+	color: #fff;
+}
+.sk_btn_juno .button--aylen:hover::before,
+.sk_btn_juno .button--aylen:hover::after {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+.sk_btn_juno .button--aylen:hover::after {
+	-webkit-transition-delay: 0.175s;
+	transition-delay: 0.175s;
+}
+
+/* Saqui */
+.sk_btn_juno .button.button--saqui {
+	overflow: hidden;
+	color: #fff;
+	background: #2d98e0;
+	-webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.sk_btn_juno .button--saqui::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 1em 2em;
+	color: #fff;
+	-webkit-transform-origin: -25% 50%;
+	transform-origin: -25% 50%;
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+	-webkit-transition: -webkit-transform 0.3s ease-in;
+	transition: transform 0.3s ease-in;
+}
+
+.sk_btn_juno .button--saqui:hover::after,
+.sk_btn_juno .button--saqui:hover {
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.sk_btn_juno .button--saqui:hover {
+	background-color: #2376ae;
+	color: #2376ae;
+}
+.sk_btn_juno .button--saqui.button--inverted:hover {
+	background-color: #3f51b5;
+	color: #3f51b5;
+}
+.sk_btn_juno .button--saqui:hover::after {
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg);
+}
+
+
+/* Antiman */
+.sk_btn_juno .button--antiman {
+	background: none;
+	border: none;
+        color: #fff;
+	
+}
+
+.sk_btn_juno .button--antiman:hover {
+	color: #2d98e0;
+	
+}
+
+.sk_btn_juno .button--antiman > span {
+	padding-left: 0.35em;
+}
+.sk_btn_juno .button--antiman::before,
+.sk_btn_juno .button--antiman::after {
+	content: '';
+	z-index: -1;
+	border-radius: inherit;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.sk_btn_juno .button--antiman::before {
+	border: 2px solid #2d98e0;
+	opacity: 0;
+        color: #2d98e0;
+	-webkit-transform: scale3d(1.2, 1.2, 1);
+	transform: scale3d(1.2, 1.2, 1);
+}
+.sk_btn_juno .button--antiman.button--border-thin::before {
+	border-width: 1px;
+}
+.sk_btn_juno .button--antiman.button--border-medium::before {
+	border-width: 2px;
+}
+.sk_btn_juno .button--antiman.button--border-thick::before {
+	border-width: 3px;
+}
+
+.sk_btn_juno .button--antiman::after {
+	background: #2d98e0;
+        color: #fff;
+}
+
+.sk_btn_juno .button--antiman:hover::before {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+.sk_btn_juno .button--antiman:hover::after {
+	opacity: 0;
+	-webkit-transform: scale3d(0.8, 0.8, 1);
+	transform: scale3d(0.8, 0.8, 1);
+}

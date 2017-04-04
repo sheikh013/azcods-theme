@@ -1,0 +1,30 @@
+article {
+    margin-top: 25px;
+
+}
+
+.comments-area {
+    h2 {
+        font-size: 14px;
+        border-bottom: solid 1px #ddd;
+        border-top: solid 1px #ddd;
+        padding: 15px 0;
+    }
+    .comment-reply-title {
+        font-size: 14px;
+        border-bottom: solid 1px #ddd;
+        border-top: solid 1px #ddd;
+        padding: 15px 0;
+    }
+}
+
+#commentform {
+    label {
+        display: block !important;
+        color: #777 !important;
+    }
+    input {
+        display: block !important;
+        width: 70% !important;
+    }
+}

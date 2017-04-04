@@ -1,0 +1,291 @@
+$link-normal: #555;
+$link-hover: #d94f5c;
+$menu-wrapper-bg: #fff;
+#skh-version__2 {
+    position: relative;
+    @extend .clearfix;
+    /* Menu Container */
+    .menu {
+        @include normal() {
+            display: none;
+        }
+        &__brand {
+            width: 25%;
+            display: block;
+            float: left;
+            img {
+                max-height: 55px;
+                @include transition(compact(all 0.5s));
+            }
+        }
+        &__list {
+            text-align: right;
+        }
+        &__list--wrapper {
+            position: relative;
+            list-style-type: none;
+            width: 75%;
+            display: block;
+            float: left;
+            @include transition(compact(all 0.3s));
+            padding-top: 12px;
+        }
+        &--wrapper {
+            position: relative;
+            background-color: $menu-wrapper-bg;
+            z-index: 10;
+            @include box-shadow(0 5px 15px rgba(0, 0, 0, .05));
+            @extend .clearfix;
+            @include transition(compact(all 0.5s));
+            padding: 20px 25px;
+        }
+    }
+    /* Menu Item List Elements */
+    .menu {
+        .menu-item {
+            display: inline-block;
+            margin: 5px;
+            position: relative;
+            a {
+                padding: 10px 15px;
+                background-color: transparent;
+                text-decoration: none;
+                color: $link-normal;
+                @include transition(compact(all 0.3s));
+                &:hover {
+                    color: $link-hover;
+                }
+            }
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                opacity: 0;
+                border: 2px solid $link-hover;
+                @include transition(compact(all 0.3s));
+            }
+            &:before {
+                top: -4px;
+                left: 8px;
+                border-width: 2px 0 0 2px;
+            }
+            &:after {
+                right: 8px;
+                bottom: -5px;
+                border-width: 0 2px 2px 0;
+            }
+        }
+    }
+    .menu {
+        .menu-item:hover,
+        .menu-item:focus,
+        .menu-item.current_page_item {
+            a {
+                color: $link-hover;
+            }
+            &:before,
+            &:after {
+                opacity: 1;
+            }
+            &:before {
+                top: -4px;
+                left: 0px;
+            }
+            &:after {
+                right: 0px;
+                bottom: -4px;
+            }
+        }
+    }
+    .menu--is-fixed {
+        height: 100px;
+        .menu--wrapper {
+            position: fixed;
+            width: 100%;
+        }
+        &.scroll {
+            .menu--wrapper {
+                padding: 8px 25px;
+            }
+            .menu__list--wrapper {
+                padding-top: 4px;
+            }
+            .menu__brand {
+                img {
+                    max-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+**
+** MOBILE VERSION
+**
+*/
+
+.mobile-menu {
+    display: none;
+    @include normal() {
+        display: block;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    height: 50px;
+    .overlay {
+        content: '';
+        @include transition(compact(all 0.5s));
+        height: 100%;
+        width: 0px;
+        background-color: rgba(0, 0, 0, .5);
+        position: fixed;
+        left: 0px;
+        top: 50px;
+        &.open-menu {
+            width: 100%;
+        }
+    }
+    &__brand {
+        display: block;
+        float: right;
+        @extend .clearfix;
+        img {
+            max-height: 35px;
+            @include transition(compact(all 0.5s));
+            float: right;
+        }
+    }
+    &__list {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 5;
+        top: 50px;
+        left: 0px;
+        background-color: #fff;
+        //border-top: solid 1px #ddd;
+        //overflow-y: scroll;
+        overflow: hidden;
+        @include box-shadow(5px 5px 15px rgba(0, 0, 0, .2));
+        @include transition(compact(all 0.5s));
+        a {
+            width: 100%;
+            padding: 10px 15px;
+            @include transition(compact(all 0.5s));
+            border-bottom: solid 1px #ddd;
+            &:hover {
+                text-decoration: none;
+                color: $link-hover;
+            }
+        }
+        a {
+            display: none;
+        }
+        &.open-menu {
+            width: 80%;
+            a {
+                display: block;
+            }
+        }
+    }
+    &__list--wrapper {
+        position: relative;
+        list-style-type: none;
+        display: block;
+        @include transition(compact(all 0.3s));
+    }
+    &--wrapper {
+        position: relative;
+        background-color: $menu-wrapper-bg;
+        z-index: 10;
+        @extend .clearfix;
+        @include transition(compact(all 0.5s));
+        padding: 8px 15px;
+        background-color: #f5f5f5;
+    }
+}
+
+
+/* btn */
+
+$bar-color: #888;
+.toggleTopMenu-mobile {
+    position: absolute !important;
+    top: 12px;
+}
+
+.anim-btn {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    span {
+        margin: 0 auto;
+        position: relative;
+        top: 12px;
+    }
+    span:before,
+    span:after {
+        position: absolute;
+        content: '';
+    }
+    span,
+    span:before,
+    span:after {
+        width: 30px;
+        height: 3px;
+        background-color: $bar-color;
+        display: block;
+    }
+    span:before {
+        margin-top: -8px;
+    }
+    span:after {
+        margin-top: 8px;
+    }
+}
+
+
+/* example 5 */
+
+.example5 span {
+    transition-duration: 0s;
+    transition-delay: .1s;
+}
+
+.example5:hover span {
+    background-color: rgba(0, 0, 0, 0.0);
+    transition-delay: .1s;
+}
+
+.example5 span:before {
+    transition-property: margin, transform;
+    transition-duration: .2s;
+    transition-delay: .2s, 0;
+}
+
+.example5:hover span:before {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0, .2s;
+}
+
+.example5 span:after {
+    transition-property: margin, transform;
+    transition-duration: .2s;
+    transition-delay: .2s, 0;
+}
+
+.example5:hover span:after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0, .2s;
+}

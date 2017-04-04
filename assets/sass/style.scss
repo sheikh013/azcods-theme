@@ -1,0 +1,42 @@
+/*!
+Theme Name: Azcods Theme
+Theme URI: http://underscores.me/
+Author: Shekh Kamal Hussain
+Author URI: http://www.shekhkamal.com
+Description: Custom Theme for :
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: skh_azcods
+Tags:
+
+
+
+Azcods Theme  is distributed under the terms of the GNU GPL v2 or later.
+
+
+*/
+@import 'compass';
+@import "components/variables";
+
+@import "components/mixins";
+
+@import "components/reset";
+
+@import "components/global";
+
+@import "components/typography";
+
+@import "components/form";
+
+@import "components/header-v2";
+
+@import "components/list";
+
+@import "components/footer";
+
+@import "components/blog";
+
+@import "components/aside";
+
+

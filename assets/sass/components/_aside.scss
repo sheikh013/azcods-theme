@@ -1,0 +1,57 @@
+/* Widget */
+
+aside {
+    margin-top: 25px;
+    .search-form {
+        span {
+            display: none;
+        }
+    }
+    .widget-area {}
+    .widget {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid 1px #eee;
+    }
+    .widget-title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    ul {
+        li {
+            padding: 5px 0px;
+            font-size: 14px;
+            a {
+                color: #777;
+            }
+        }
+    }
+    .search-form {
+        label {
+            width: 70% !important;
+        }
+        input {
+            width: 100%;
+            border: 1px #ddd solid;
+        }
+        .search-submit {
+            width: 30% !important;
+            margin-left: -8px;
+        }
+    }
+
+    .widget_search {
+    label {
+        width: 100% !important;
+        span {
+            display: none;
+        }
+    }
+    input {
+        width: 100% !important;
+    }
+    .search-submit {
+        display: none;
+    }
+}
+}
