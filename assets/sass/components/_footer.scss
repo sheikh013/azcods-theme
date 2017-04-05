@@ -1,0 +1,89 @@
+footer.site-footer {
+    background-color: #212121;
+    padding-top: 5%;
+    color: #555 !important;
+    h4 {
+        font-family: $m-500;
+        color: #555;
+    }
+    .is-dashed--title {
+        h4 {
+            margin-bottom: 25px;
+            &:after {
+                content: '';
+                width: 20%;
+                height: 2px;
+                background-color: #555;
+                position: absolute;
+                top: 8px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .logo-col {
+        opacity: 0.1;
+    }
+    .get-connect {
+        padding: 0px;
+        li {
+            padding: 7px 0;
+            display: block;
+            color: #555 !important;
+            a {
+                color: #555;
+            }
+            &.skype:before {
+                font-family: 'FontAwesome';
+                content: '\f17e';
+                font-size: 20px;
+                vertical-align: middle;
+                padding-right: 5px;
+            }
+            &.email:before {
+                font-family: 'FontAwesome';
+                content: '\f0e0';
+                font-size: 17px;
+                vertical-align: middle;
+                padding-right: 5px;
+            }
+        }
+    }
+    .footer-copyinfo {
+        background-color: #111;
+        text-align: center;
+        color: #555;
+        padding: 18px;
+        font-size: 13px;
+        margin-top: 5%;
+    }
+    input {
+        height: 50px;
+        background-color: transparent;
+        border-color: #555;
+        font-size: 13px;
+        border-radius: 3px;
+        overflow: hidden;
+        padding-left: 15px;
+        color: white;
+        &:focus {
+            border: solid 1px $pt-color;
+            box-shadow: none;
+            color: white;
+        }
+    }
+    button {
+        height: 50px;
+        padding: 6px 15px;
+        background-color: $pt-color;
+        border-color: $pt-color;
+        border-top-right-radius: 3px !important;
+        border-bottom-right-radius: 3px !important;
+        color: white;
+        @include transition(compact(all 0.3s));
+        &:hover {
+            background-color: darken($pt-color, 10%);
+            border-color: darken($pt-color, 10%);
+            color: white;
+        }
+    }
+}

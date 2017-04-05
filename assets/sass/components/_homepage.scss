@@ -1,0 +1,13 @@
+.service--module {
+    min-height: 180px;
+    .et_pb_main_blurb_image {
+        img {
+            max-height: 85px;
+        }
+    }
+    h4 {
+        font-family: $m-300;
+        color: #777;
+        line-height: 1.5;
+    }
+}

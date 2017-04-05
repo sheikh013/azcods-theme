@@ -37,7 +37,8 @@ if( !empty($favicon_img) ): ?>
 
 <body <?php body_class(); ?>>
 
-<div id="page" class="site">
+
+<div id="azcods_css_skh" class="site">
 
 <?php skh_get_header_template(v2) ?>
 

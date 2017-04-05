@@ -46,8 +46,8 @@ h6 {
     }
 }
 
-@include small(){
-	    h1 {
+@include small() {
+    h1 {
         font-size: 20px
     }
 }
@@ -63,9 +63,13 @@ h6 {
 
 p {
     margin-bottom: 2em;
-	@include normal(){
-		font-size: 13px;
-	}
+    @include normal() {
+        font-size: 13px;
+    }
+
+    &:last-child{
+margin-bottom: 0em;
+    }
 }
 
 a {
@@ -73,5 +77,51 @@ a {
     color: grey;
 }
 
+.section--title {
+    font-family: $m-300;
+    h1 {
+        color: $pt-color !important;
+        font-size: 28px;
+        &:after,
+        &:before {
+            font-family: 'Revalia', cursive;
+            font-size: 35px;
+            vertical-align: -3px;
+            color: #ddd !important;
+        }
+        &:after {
+            padding-left: 15px;
+            content: '/>';
+        }
+        &:before {
+            content: '<';
+            padding-right: 15px;
+        }
+    }
+    h4 {
+        color: #888!important;
+        margin-top: 12px !important;
+        border-bottom: solid 1px #eee;
+        padding-bottom: 15px !important;
+        width: 50%;
+        display: block;
+        margin: 0 auto !important;
+    }
+}
 
+.section--title.is--white {
+    h1 {
+        color: white !important;
+    }
+    h4 {
+        color: white !important;
+    }
+}
 
+.secondary--title {
+    h3 {
+        font-family: $m-300;
+        color: $pt-color !important;
+        margin-bottom: 10px !important;
+    }
+}

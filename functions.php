@@ -144,3 +144,4 @@ require get_template_directory() . '/assets/functions/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/assets/functions/jetpack.php';
+require get_template_directory() . '/assets/functions/portfolio-widget.php';

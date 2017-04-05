@@ -26,7 +26,7 @@
                 while (have_rows('list_of_footer_column', 'option')) : the_row();
                     ?>
                     <div class="col-sm-<?php the_sub_field('width_of_the_column', 'option'); ?> <?php the_sub_field('class_for_the_footer', 'option');?>">
-                        <h5><?php the_sub_field('title_for_footer', 'option'); ?></h5>
+                        <h4><?php the_sub_field('title_for_footer', 'option'); ?></h4>
                         <?php the_sub_field('content_for_footer', 'option'); ?>
                     </div>
                     <?php

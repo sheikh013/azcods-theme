@@ -1,12 +1,3 @@
-jQuery(document).ready(function ($) {
-
-
-
-});
-
-
-
-
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-touch-shiv-cssclasses-teststyles-prefixes-load
  */;
@@ -26,7 +17,7 @@ window.Modernizr = function (a, b, c) {
     function A(a, b, d) {
         for (var e in a) {
             var f = b[a[e]];
-            if (f !== c) 
+            if (f !== c)
                 return d === !1
                     ? a[e]
                     : y(f, "function")
@@ -59,8 +50,8 @@ window.Modernizr = function (a, b, c) {
                 l = b.createElement("div"),
                 m = b.body,
                 n = m || b.createElement("body");
-            if (parseInt(d, 10)) 
-                while (d--) 
+            if (parseInt(d, 10))
+                while (d--)
                     j = b.createElement("div"),
                     j.id = e
                         ? e[d]
@@ -99,7 +90,7 @@ window.Modernizr = function (a, b, c) {
         },
     Function.prototype.bind || (Function.prototype.bind = function (b) {
         var c = this;
-        if (typeof c != "function") 
+        if (typeof c != "function")
             throw new TypeError;
         var d = r.call(arguments, 1),
             e = function () {
@@ -130,17 +121,17 @@ window.Modernizr = function (a, b, c) {
             }),
         c
     };
-    for (var B in n) 
+    for (var B in n)
         v(n, B) && (s = B.toLowerCase(), e[s] = n[B](), q.push((e[s]
             ? ""
             : "no-") + s));
     return e.addTest = function (a, b) {
-        if (typeof a == "object") 
-            for (var d in a) 
+        if (typeof a == "object")
+            for (var d in a)
                 v(a, d) && e.addTest(d, a[d]);
             else {
                 a = a.toLowerCase();
-            if (e[a] !== c) 
+            if (e[a] !== c)
                 return e;
             b = typeof b == "function"
                 ? b()
@@ -174,7 +165,7 @@ window.Modernizr = function (a, b, c) {
         }
         function n(a, c, f) {
             c || (c = b);
-            if (j) 
+            if (j)
                 return c.createElement(a);
             f || (f = m(c));
             var g;
@@ -193,7 +184,7 @@ window.Modernizr = function (a, b, c) {
         }
         function o(a, c) {
             a || (a = b);
-            if (j) 
+            if (j)
                 return a.createDocumentFragment();
             c = c || m(a);
             var d = c
@@ -202,7 +193,7 @@ window.Modernizr = function (a, b, c) {
                 e = 0,
                 f = l(),
                 g = f.length;
-            for (; e < g; e++) 
+            for (; e < g; e++)
                 d.createElement(f[e]);
             return d
         }
@@ -306,7 +297,7 @@ function (a, b, c) {
                 "img" != a && m(function () {
                     t.removeChild(l)
                 }, 50);
-                for (var d in y[c]) 
+                for (var d in y[c])
                     y[c].hasOwnProperty(d) && y[c][d].onload()
             }
         }
@@ -404,10 +395,10 @@ function (a, b, c) {
                 e,
                 f,
                 g;
-            for (f = 0; f < d; f++) 
+            for (f = 0; f < d; f++)
                 g = a[f].split("="),
                 (e = z[g.shift()]) && (c = e(c, g));
-            for (f = 0; f < b; f++) 
+            for (f = 0; f < b; f++)
                 c = x[f](c);
             return c
         }
@@ -443,7 +434,7 @@ function (a, b, c) {
         function h(a, b) {
             function c(a, c) {
                 if (a) {
-                    if (e(a)) 
+                    if (e(a))
                         c || (j = function () {
                             var a = []
                                 .slice
@@ -452,15 +443,15 @@ function (a, b, c) {
                             l()
                         }),
                         g(a, j, b, 0, h);
-                    else if (Object(a) === a) 
+                    else if (Object(a) === a)
                         for (n in m = function () {
                             var b = 0,
                                 c;
-                            for (c in a) 
+                            for (c in a)
                                 a.hasOwnProperty(c) && b++;
                             return b
                         }(),
-                        a) 
+                        a)
                             a.hasOwnProperty(n) && (!c && !--m && (d(j)
                                 ? j = function () {
                                     var a = []
@@ -478,7 +469,7 @@ function (a, b, c) {
                                         l()
                                     }
                                 }(k[n])), g(a[n], j, b, n, h))
-                    } else 
+                    } else
                     !c && l()
             }
             var h = !!a.test,
@@ -496,17 +487,17 @@ function (a, b, c) {
         var i,
             j,
             l = this.yepnope.loader;
-        if (e(a)) 
+        if (e(a))
             g(a, 0, l, 0);
-        else if (w(a)) 
-            for (i = 0; i < a.length; i++) 
+        else if (w(a))
+            for (i = 0; i < a.length; i++)
                 j = a[i],
                 e(j)
                     ? g(j, 0, l, 0)
                     : w(j)
                         ? B(j)
                         : Object(j) === j && h(j, l);
-            else 
+            else
             Object(a) === a && h(a, l)
     },
     B.addPrefix = function (a, b) {
@@ -528,7 +519,7 @@ function (a, b, c) {
             o,
             e = e || B.errorTimeout;
         k.src = a;
-        for (o in d) 
+        for (o in d)
             k.setAttribute(o, d[o]);
         c = j
             ? h
@@ -554,7 +545,7 @@ function (a, b, c) {
         e.href = a,
         e.rel = "stylesheet",
         e.type = "text/css";
-        for (j in d) 
+        for (j in d)
             e.setAttribute(j, d[j]);
         g || (n.parentNode.insertBefore(e, n), m(c, 0))
     }

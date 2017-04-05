@@ -60,20 +60,20 @@ $menu-wrapper-bg: #fff;
             &:after {
                 content: '';
                 position: absolute;
-                width: 10px;
+                width: 2px;
                 height: 10px;
                 opacity: 0;
                 border: 2px solid $link-hover;
                 @include transition(compact(all 0.3s));
             }
             &:before {
-                top: -4px;
+                top: 4px;
                 left: 8px;
                 border-width: 2px 0 0 2px;
             }
             &:after {
                 right: 8px;
-                bottom: -5px;
+                bottom: 4px;
                 border-width: 0 2px 2px 0;
             }
         }
@@ -90,17 +90,19 @@ $menu-wrapper-bg: #fff;
                 opacity: 1;
             }
             &:before {
-                top: -4px;
+                top: 5px;
                 left: 0px;
+
             }
             &:after {
-                right: 0px;
-                bottom: -4px;
+                right:1px;
+                bottom: 5px;
+
             }
         }
     }
     .menu--is-fixed {
-        height: 100px;
+        height: 95px;
         .menu--wrapper {
             position: fixed;
             width: 100%;

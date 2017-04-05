@@ -16,27 +16,24 @@ Azcods Theme  is distributed under the terms of the GNU GPL v2 or later.
 
 
 */
+
+@import url('https://fonts.googleapis.com/css?family=Revalia');
 @import 'compass';
 @import "components/variables";
-
 @import "components/mixins";
-
 @import "components/reset";
 
 @import "components/global";
 
+
+
+
 @import "components/typography";
-
 @import "components/form";
-
 @import "components/header-v2";
-
+@import "components/homepage";
 @import "components/list";
-
 @import "components/footer";
-
 @import "components/blog";
-
 @import "components/aside";
-
-
+@import "components/portfolio-widget";
