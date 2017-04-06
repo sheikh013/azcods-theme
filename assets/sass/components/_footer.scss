@@ -2,6 +2,9 @@ footer.site-footer {
     background-color: #212121;
     padding-top: 5%;
     color: #555 !important;
+    @include normal() {
+        text-align: center !important;
+    }
     h4 {
         font-family: $m-500;
         color: #555;
@@ -17,11 +20,22 @@ footer.site-footer {
                 position: absolute;
                 top: 8px;
                 margin-left: 10px;
+                @include normal() {
+                    display: none;
+                }
+            }
+            @include normal() {
+                border-top: solid 1px #555;
+                padding-top: 25px;
             }
         }
     }
     .logo-col {
         opacity: 0.1;
+        img {
+            width: 55%;
+            padding-bottom: 20px;
+        }
     }
     .get-connect {
         padding: 0px;
@@ -52,7 +66,7 @@ footer.site-footer {
         background-color: #111;
         text-align: center;
         color: #555;
-        padding: 18px;
+        padding: 18px 0px;
         font-size: 13px;
         margin-top: 5%;
     }

@@ -41,5 +41,6 @@ if( !empty($favicon_img) ): ?>
 <div id="azcods_css_skh" class="site">
 
 <?php skh_get_header_template(v2) ?>
+<?php putRevSlider('home-page', 'homepage'); ?>
 
 	<div id="content" class="site-content">

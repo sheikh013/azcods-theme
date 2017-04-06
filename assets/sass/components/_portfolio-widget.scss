@@ -1,6 +1,5 @@
 #skhGrid {
     .grid {
-        //padding: 20px 20px 100px 20px;
         max-width: 1140px;
         margin: 0 auto;
         list-style: none;
@@ -13,13 +12,17 @@
             width: 33%;
             @include medium() {
                 width: 45%;
+                max-height: 285px;
             }
             @include normal() {
-                min-height: 170px;
-                max-height: 170px;
+                max-height: 285px;
+                min-height: 185px;
+            }
+            @include small() {
+                min-height: 150px;
             }
             @media(max-width:620px) {
-                width: 75%;
+                width: 100%;
             }
             margin: 0;
             padding: 20px;
@@ -29,6 +32,12 @@
         figure {
             margin: 0;
             position: relative;
+            @include medium() {
+                margin-bottom: 15px;
+            }
+            @include small() {
+                margin-bottom: 0px;
+            }
             img {
                 max-width: 100%;
                 display: block;
@@ -36,11 +45,16 @@
             }
         }
         figcaption {
-
             position: absolute;
             top: 0;
             left: 0;
             padding: 20px;
+            @include normal() {
+                padding: 15px;
+            }
+            @include small() {
+                padding-top: 25px;
+            }
             background: $pt-color;
             color: #ed4e6e;
             padding-top: 12%;
@@ -54,6 +68,9 @@
                 margin-top: 10px;
                 &:before {
                     content: url('assets/img/view.png');
+                    @media(max-width: 400px) {
+                        display: none;
+                    }
                 }
             }
             a {
@@ -102,5 +119,5 @@
 }
 
 .cs-style-1 figcaption a {
-    margin-top: 30px;
+    margin-top: 5px;
 }

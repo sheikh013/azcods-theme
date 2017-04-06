@@ -50,19 +50,87 @@ Azcods Theme  is distributed under the terms of the GNU GPL v2 or later.
 /*
     Link hover and active stage
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -70,8 +138,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -79,16 +156,20 @@ body {
   line-height: 1.55;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -146,8 +227,8 @@ body {
   max-width: 1140px;
 }
 
-#et_builder_outer_content div {
-  color: inherit;
+.et_section_regular .et_pb_row {
+  width: 80% !important;
 }
 
 @font-face {
@@ -256,6 +337,7 @@ a {
 .section--title h1 {
   color: #29aae2 !important;
   font-size: 28px;
+  margin-bottom: 12px !important;
 }
 .section--title h1:after, .section--title h1:before {
   font-family: 'Revalia', cursive;
@@ -767,6 +849,11 @@ footer.site-footer {
   padding-top: 5%;
   color: #555 !important;
 }
+@media screen and (max-width: 767px) {
+  footer.site-footer {
+    text-align: center !important;
+  }
+}
 footer.site-footer h4 {
   font-family: "m-500", "sans-sarif";
   color: #555;
@@ -783,8 +870,23 @@ footer.site-footer .is-dashed--title h4:after {
   top: 8px;
   margin-left: 10px;
 }
+@media screen and (max-width: 767px) {
+  footer.site-footer .is-dashed--title h4:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer.site-footer .is-dashed--title h4 {
+    border-top: solid 1px #555;
+    padding-top: 25px;
+  }
+}
 footer.site-footer .logo-col {
   opacity: 0.1;
+}
+footer.site-footer .logo-col img {
+  width: 55%;
+  padding-bottom: 20px;
 }
 footer.site-footer .get-connect {
   padding: 0px;
@@ -815,7 +917,7 @@ footer.site-footer .footer-copyinfo {
   background-color: #111;
   text-align: center;
   color: #555;
-  padding: 18px;
+  padding: 18px 0px;
   font-size: 13px;
   margin-top: 5%;
 }
@@ -946,22 +1048,38 @@ aside .widget_search .search-submit {
 @media screen and (max-width: 991px) {
   #skhGrid .grid li {
     width: 45%;
+    max-height: 285px;
   }
 }
 @media screen and (max-width: 767px) {
   #skhGrid .grid li {
-    min-height: 170px;
-    max-height: 170px;
+    max-height: 285px;
+    min-height: 185px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #skhGrid .grid li {
+    min-height: 150px;
   }
 }
 @media (max-width: 620px) {
   #skhGrid .grid li {
-    width: 75%;
+    width: 100%;
   }
 }
 #skhGrid .grid figure {
   margin: 0;
   position: relative;
+}
+@media screen and (max-width: 991px) {
+  #skhGrid .grid figure {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #skhGrid .grid figure {
+    margin-bottom: 0px;
+  }
 }
 #skhGrid .grid figure img {
   max-width: 100%;
@@ -977,6 +1095,16 @@ aside .widget_search .search-submit {
   color: #ed4e6e;
   padding-top: 12%;
 }
+@media screen and (max-width: 767px) {
+  #skhGrid .grid figcaption {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #skhGrid .grid figcaption {
+    padding-top: 25px;
+  }
+}
 #skhGrid .grid figcaption h3 {
   margin: 0;
   padding: 0;
@@ -988,6 +1116,11 @@ aside .widget_search .search-submit {
 }
 #skhGrid .grid figcaption span:before {
   content: url("assets/img/view.png");
+}
+@media (max-width: 400px) {
+  #skhGrid .grid figcaption span:before {
+    display: none;
+  }
 }
 #skhGrid .grid figcaption a {
   text-align: center;
@@ -1030,7 +1163,7 @@ aside .widget_search .search-submit {
 }
 
 .cs-style-1 figcaption a {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

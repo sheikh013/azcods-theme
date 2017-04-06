@@ -57,10 +57,8 @@ body {
     max-width: 1140px;
 }
 
-#et_builder_outer_content {
-    div {
-        color: inherit;
-    }
+.et_section_regular .et_pb_row {
+    width: 80% !important;
 }
 
 @font-face {
@@ -77,10 +75,12 @@ body {
     font-family: 'm-500';
     src: url('assets/fonts/MuseoSans-500.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'm-700';
     src: url('assets/fonts/MuseoSans-700.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'm-900';
     src: url('assets/fonts/MuseoSans-900.otf') format('opentype');
