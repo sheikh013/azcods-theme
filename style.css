@@ -251,6 +251,10 @@ body {
   font-family: 'm-900';
   src: url("assets/fonts/MuseoSans-900.otf") format("opentype");
 }
+.skhButton {
+  font-family: "m-300", "sans-sarif";
+}
+
 h1 {
   font-size: 36px;
 }
@@ -356,8 +360,7 @@ a {
 .section--title h4 {
   color: #888 !important;
   margin-top: 12px !important;
-  border-bottom: solid 1px #eee;
-  padding-bottom: 15px !important;
+  padding-bottom: 5px !important;
   width: 50%;
   display: block;
   margin: 0 auto !important;
@@ -494,6 +497,7 @@ input[type="submit"] {
 
 #skh-version__2 {
   position: relative;
+  font-family: "m-100", "sans-sarif";
   /* Menu Container */
   /* Menu Item List Elements */
 }
@@ -805,6 +809,7 @@ input[type="submit"] {
 
 .service--module {
   min-height: 180px;
+  margin-bottom: 5px !important;
 }
 .service--module .et_pb_main_blurb_image img {
   max-height: 85px;
@@ -813,6 +818,13 @@ input[type="submit"] {
   font-family: "m-300", "sans-sarif";
   color: #777;
   line-height: 1.5;
+}
+
+@media (max-width: 479px) {
+  .service--column {
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 15px;
+  }
 }
 
 ul, ol {
@@ -1028,6 +1040,19 @@ aside .widget_search .search-submit {
   display: none;
 }
 
+.et_pb_testimonial:before {
+  content: "\7c";
+  font-size: 32px;
+  left: 50%;
+  position: absolute;
+  background: #29aae2 !important;
+  margin-left: -16px;
+  color: #fff !important;
+  -moz-border-radius: 31px;
+  -webkit-border-radius: 31px;
+  border-radius: 31px;
+}
+
 #skhGrid .grid {
   max-width: 1140px;
   margin: 0 auto;
@@ -1109,6 +1134,7 @@ aside .widget_search .search-submit {
   margin: 0;
   padding: 0;
   color: #fff;
+  font-size: 17px;
   font-family: "m-100", "sans-sarif";
 }
 #skhGrid .grid figcaption span {

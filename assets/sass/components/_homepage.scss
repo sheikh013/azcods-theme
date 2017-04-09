@@ -1,5 +1,6 @@
 .service--module {
     min-height: 180px;
+    margin-bottom: 5px !important;
     .et_pb_main_blurb_image {
         img {
             max-height: 85px;
@@ -9,5 +10,12 @@
         font-family: $m-300;
         color: #777;
         line-height: 1.5;
+    }
+}
+
+.service--column {
+    @media(max-width: 479px) {
+        border-bottom: solid 1px #ddd;
+        padding-bottom: 15px;
     }
 }

@@ -4,6 +4,8 @@ $menu-wrapper-bg: #fff;
 #skh-version__2 {
     position: relative;
     @extend .clearfix;
+
+    font-family: $m-100;
     /* Menu Container */
     .menu {
         @include normal() {

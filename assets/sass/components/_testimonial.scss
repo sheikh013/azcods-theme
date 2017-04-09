@@ -1,0 +1,15 @@
+.et_pb_testimonial  {
+    &:before {
+        content: "\7c";
+        font-size: 32px;
+        left: 50%;
+        position: absolute;
+
+        background: $pt-color !important;
+        margin-left: -16px;
+        color: #fff !important;
+        -moz-border-radius: 31px;
+        -webkit-border-radius: 31px;
+        border-radius: 31px;
+    }
+}
