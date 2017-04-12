@@ -96,3 +96,12 @@ $m-900: 'm-900','sans-sarif';
     font-family: $m-300;
 
 }
+
+.et_pb_section.is--dark-bg{
+    > div:first-child{
+        z-index: -1;
+    }
+    background-color: transparent;
+    background: linear-gradient(180deg,transparent 10%,#000) !important;
+}
+

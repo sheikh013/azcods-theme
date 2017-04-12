@@ -255,6 +255,14 @@ body {
   font-family: "m-300", "sans-sarif";
 }
 
+.et_pb_section.is--dark-bg {
+  background-color: transparent;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #000000) !important;
+}
+.et_pb_section.is--dark-bg > div:first-child {
+  z-index: -1;
+}
+
 h1 {
   font-size: 36px;
 }
@@ -364,6 +372,7 @@ a {
   width: 50%;
   display: block;
   margin: 0 auto !important;
+  line-height: 1.6;
 }
 
 .section--title.is--white h1 {
@@ -396,7 +405,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea, select {
   color: #555;
-  border: 1px solid #888;
+  border: 1px solid #ddd;
   border-radius: 3px;
   padding: 7px 5px;
   font-weight: normal;
@@ -480,6 +489,7 @@ textarea:focus {
 
 textarea {
   width: 100%;
+  border: 1px solid #ddd !important;
 }
 
 button,
@@ -1051,6 +1061,28 @@ aside .widget_search .search-submit {
   -moz-border-radius: 31px;
   -webkit-border-radius: 31px;
   border-radius: 31px;
+}
+
+.my-contact-form .wpcf7-form input {
+  width: 100% !important;
+  display: block;
+  height: 50px !important;
+  border: 1px solid #ddd !important;
+}
+.my-contact-form .wpcf7-form input[type="submit"] {
+  background-color: #29aae2;
+  border: none !important;
+  border-radius: 5px !important;
+  color: white;
+  font-family: "m-500", "sans-sarif";
+  text-transform: uppercase;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.my-contact-form .wpcf7-form input[type="submit"]:hover {
+  background: #1a8cbe;
 }
 
 #skhGrid .grid {

@@ -1,6 +1,6 @@
 %input {
     color: #555;
-    border: 1px solid #888;
+    border: 1px solid #ddd;
     border-radius: 3px;
     padding: 7px 5px;
     font-weight: normal;
@@ -50,6 +50,9 @@ select {
 
 textarea {
     width: 100%;
+        @extend %input;
+    @extend %placeholder-text;
+    border: 1px solid #ddd !important;
 }
 
 button,
