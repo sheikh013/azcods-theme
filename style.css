@@ -1069,7 +1069,10 @@ aside .widget_search .search-submit {
   height: 50px !important;
   border: 1px solid #ddd !important;
 }
-.my-contact-form #nf-form-1-cont input[type="submit"] {
+.my-contact-form #nf-form-1-cont .nf-form-fields-required {
+  display: none;
+}
+.my-contact-form #nf-form-1-cont input[type="button"] {
   background-color: #29aae2;
   border: none !important;
   border-radius: 5px !important;
@@ -1081,7 +1084,7 @@ aside .widget_search .search-submit {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.my-contact-form #nf-form-1-cont input[type="submit"]:hover {
+.my-contact-form #nf-form-1-cont input[type="button"]:hover {
   background: #1a8cbe;
 }
 
