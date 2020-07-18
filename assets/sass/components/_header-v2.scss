@@ -107,10 +107,14 @@ $menu-wrapper-bg: #fff;
     .menu--wrapper {
       position: fixed;
       width: 100%;
+      padding-left: 7%;
+      padding-right: 7%;
     }
     &.scroll {
       .menu--wrapper {
         padding: 8px 25px;
+        padding-left: 7%;
+        padding-right: 7%;
       }
       .menu__list--wrapper {
         padding-top: 4px;
