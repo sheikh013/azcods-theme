@@ -23,6 +23,8 @@
 #Folders#
 dist
 gulp
+node_modules
+
 
 
 # Logs and databases #
@@ -48,4 +50,5 @@ node_modules.lnk
 
 *.codekit
 *.scssc
+
 

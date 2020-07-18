@@ -60,6 +60,13 @@ footer.site-footer {
                 vertical-align: middle;
                 padding-right: 5px;
             }
+            &.location:before {
+              font-family: 'FontAwesome';
+              content: '\f124';
+              font-size: 17px;
+              vertical-align: middle;
+              padding-right: 5px;
+          }
         }
     }
     .footer-copyinfo {
