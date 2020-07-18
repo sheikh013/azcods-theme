@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <?php // icons & favicons
-$favicon_img = get_field('favicon_site', option);
+$favicon_img = get_field('favicon_site');
 
 if( !empty($favicon_img) ): ?>
 
@@ -40,7 +40,5 @@ if( !empty($favicon_img) ): ?>
 
 <div id="azcods_css_skh" class="site">
 
-<?php skh_get_header_template(v2) ?>
-<?php putRevSlider('home-page', 'homepage'); ?>
-
+<?php skh_get_header_template('v2') ?>
 	<div id="content" class="site-content">
