@@ -870,7 +870,7 @@ dd {
 footer.site-footer {
   background-color: #212121;
   padding-top: 5%;
-  color: #555 !important;
+  color: #999 !important;
 }
 @media screen and (max-width: 767px) {
   footer.site-footer {
@@ -879,7 +879,7 @@ footer.site-footer {
 }
 footer.site-footer h4 {
   font-family: "m-500", "sans-sarif";
-  color: #555;
+  color: #999;
 }
 footer.site-footer .is-dashed--title h4 {
   margin-bottom: 25px;
@@ -888,7 +888,7 @@ footer.site-footer .is-dashed--title h4:after {
   content: '';
   width: 20%;
   height: 2px;
-  background-color: #555;
+  background-color: #999;
   position: absolute;
   top: 8px;
   margin-left: 10px;
@@ -900,12 +900,12 @@ footer.site-footer .is-dashed--title h4:after {
 }
 @media screen and (max-width: 767px) {
   footer.site-footer .is-dashed--title h4 {
-    border-top: solid 1px #555;
+    border-top: solid 1px #999;
     padding-top: 25px;
   }
 }
 footer.site-footer .logo-col {
-  opacity: 0.1;
+  opacity: 0.7;
 }
 footer.site-footer .logo-col img {
   width: 55%;
@@ -917,10 +917,10 @@ footer.site-footer .get-connect {
 footer.site-footer .get-connect li {
   padding: 7px 0;
   display: block;
-  color: #555 !important;
+  color: #999 !important;
 }
 footer.site-footer .get-connect li a {
-  color: #555;
+  color: #999;
 }
 footer.site-footer .get-connect li.skype:before {
   font-family: 'FontAwesome';
@@ -946,7 +946,7 @@ footer.site-footer .get-connect li.location:before {
 footer.site-footer .footer-copyinfo {
   background-color: #111;
   text-align: center;
-  color: #555;
+  color: #999;
   padding: 18px 0px;
   font-size: 13px;
   margin-top: 5%;
@@ -954,7 +954,7 @@ footer.site-footer .footer-copyinfo {
 footer.site-footer input {
   height: 50px;
   background-color: transparent;
-  border-color: #555;
+  border-color: #999;
   font-size: 13px;
   border-radius: 3px;
   overflow: hidden;
